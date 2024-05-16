@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StrartTech14Patients" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.StrartTech14Patients" parent="Base.Theme.StrartTech14Patients" />
+
+
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="roundimage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+        <item name="color">@color/white</item>
+    </style>
+    <style name="roundprofile" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+        <item name="color">@color/white</item>
+    </style>
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+</resources>

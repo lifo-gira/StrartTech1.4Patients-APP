@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">StrartTech1.4Patients</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Introdction</item>
+        <item>Accident</item>
+        <item>Gender</item>
+        <item>BMI</item>
+        <item>Pain</item>
+        <item>Exercises</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/intro</item>
+        <item>@drawable/accident</item>
+        <item>@drawable/gender</item>
+        <item>@drawable/bmi</item>
+        <item>@drawable/pain</item>
+        <item>@drawable/exercises</item>
+        <item>@drawable/logout</item>
+    </array>
+
+    <string-array name="ld_activityScreenTitles1">
+        <item>Dashboard</item>
+        <item>Patient List</item>
+        <item>Schedule</item>
+        <item>Settings</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons1">
+        <item>@drawable/menu</item>
+        <item>@drawable/users</item>
+        <item>@drawable/schedule</item>
+        <item>@drawable/setting</item>
+        <item>@drawable/logout</item>
+    </array>
+</resources>

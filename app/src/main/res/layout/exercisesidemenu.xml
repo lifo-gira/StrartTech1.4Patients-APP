@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_hamburger_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="0dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_hamburger_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="334dp" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/gl_hamburger_end"
+            app:layout_constraintStart_toStartOf="@id/gl_hamburger_start"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/closedrawer"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_close"
+                app:layout_constraintBottom_toBottomOf="@+id/head"
+                app:layout_constraintStart_toEndOf="@+id/head"
+                app:layout_constraintTop_toTopOf="@+id/head" />
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Exercise Categories"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/endur"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Edurance"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:button="@drawable/checkboxoutline"
+                app:layout_constraintBottom_toTopOf="@+id/stren"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/head" />
+
+            <CheckBox
+                android:id="@+id/stren"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Strength"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:button="@drawable/checkboxoutline"
+                app:layout_constraintBottom_toTopOf="@+id/flex"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/endur" />
+
+            <CheckBox
+                android:id="@+id/flex"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Flexibility"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:button="@drawable/checkboxoutline"
+                app:layout_constraintBottom_toTopOf="@+id/bal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stren" />
+
+            <CheckBox
+                android:id="@+id/bal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Balance"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:button="@drawable/checkboxoutline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/flex" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:0.10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

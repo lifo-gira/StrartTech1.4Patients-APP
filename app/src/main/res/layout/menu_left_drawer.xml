@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="90dp" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:paddingStart="24dp"
+        android:layout_marginLeft="30dp"
+        android:paddingRight="24dp"
+        android:src="@drawable/boy"
+        android:scaleType="fitCenter"
+        app:shapeAppearanceOverlay="@style/roundprofile"/>
+
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="50dp"
+        android:text="Ronaldo"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+</LinearLayout>

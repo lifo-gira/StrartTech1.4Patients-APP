@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/image_view2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/profileicon"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/patientname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Name"
+            android:textColor="#475467"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/image_view2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/patientage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="76"
+            android:textColor="#475467"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/id"
+            app:layout_constraintStart_toEndOf="@+id/image_view2"
+            app:layout_constraintTop_toBottomOf="@+id/patientname" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Gender"
+            android:textColor="#475467"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/idvalue"
+            app:layout_constraintStart_toEndOf="@+id/patientage"
+            app:layout_constraintTop_toBottomOf="@+id/patientname" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="ID: "
+            android:textColor="#475467"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_view2" />
+
+        <TextView
+            android:id="@+id/idvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="2345678"
+            android:textColor="#475467"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/id" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/gencard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/assign"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="Generate Report"
+                    android:textAlignment="center"
+                    android:textColor="#475467"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/image_view3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_arrow_outward"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
